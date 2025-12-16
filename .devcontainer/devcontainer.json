@@ -45,7 +45,7 @@
     // https://github.com/devcontainers/features/blob/main/src/java/devcontainer-feature.json
     "ghcr.io/devcontainers/features/java:1": {
       "version": "21",
-      "installMaven": true
+      "installMaven": "true"
     }
   }
 }
