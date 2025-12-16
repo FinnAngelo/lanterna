@@ -1,7 +1,47 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "vscode": {
+    "extensions": [
+      "vscjava.vscode-java-pack"
+    ],
+    "settings": {
+      //VSCode
+      "editor.minimap.enabled": false,
+      "editor.rulers": [
+        80
+      ],
+      "files.autoSave": "afterDelay",
+      "git.enableSmartCommit": true,
+      "workbench.colorTheme": "Quiet Light",
+      //"workbench.colorTheme": "Default Light+ Experimental",
+      // Extensions
+      "pasteImage.namePrefix": "${currentFileNameWithoutExt}.",
+      "pasteImage.path": "${currentFileDir}/.images",
+      "pasteImage.defaultName": "YYMMDD-HHmmss",
+      //"editor.minimap.enabled": false,
+      "breadcrumbs.enabled": false,
+      "editor.glyphMargin": false,
+      "explorer.decorations.badges": false,
+      "explorer.decorations.colors": false,
+      "editor.fontLigatures": true,
+      //"files.autoSave": "afterDelay",
+      //"git.enableSmartCommit": true,
+      //"window.commandCenter": true,
+      "editor.renderWhitespace": "none",
+      "markdown.validate.enabled": true,
+      "markdown.updateLinksOnFileMove.enabled": "prompt",
+      "workbench.startupEditor": "none",
+      "workbench.editor.empty.hint": "hidden",
+      "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+      // chat
+      "chat.promptFiles": true
+    }
+  },
   "features": {
+    // https://github.com/devcontainers/features/blob/main/src/java/devcontainer-feature.json
     "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installMaven": true
     }
   }
 }
