@@ -73,3 +73,9 @@ To build the Lanterna project using the provided `pom.xml`, you will need to use
   mvn clean install -P release
   ```
 - Check the `target` folder for the compiled JAR files after a successful build.
+
+## Build Dependency sequence
+
+```bash
+jdeps -verbose:class --multi-release 9 target/lanterna-3.2.0-SNAPSHOT.jar > jdeps.txt
+```
